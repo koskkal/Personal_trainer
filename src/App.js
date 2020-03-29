@@ -6,12 +6,13 @@ import Typography from '@material-ui/core/Typography';
 import Customers from './Components/Customers';
 import Calendar from './Components/Calendar';
 import Trainings from './Components/Trainings';
-import { BrowserRouter, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
-        <AppBar position="static">
+        <AppBar position="static" style={{backgroundColor: '#228B22'}}>
           <Toolbar>
             <Typography variant="h6">
               Personal trainer schedule
@@ -25,6 +26,7 @@ function App() {
           <Link to="/customers">Customers</Link> {''}
           
           <Switch>
+            <Route exact path="/" component={Calendar} />
             <Route exact path="/calendar" component={Calendar} />
             <Route exact path="/trainings" component={Trainings} />
             <Route exact path="/customers" component={Customers} />
@@ -32,7 +34,6 @@ function App() {
           </Switch>
         </div>      
       </BrowserRouter>
-
 
     </div>
   );

@@ -32,7 +32,7 @@ export default function Addcustomer(props) {
 
     return(
         <div>
-            <Button style={{margin: 10}} variant="outlined" color="primary" onClick={handleClickOpen}>
+            <Button style={{margin: 10}} variant="outlined" color="inherit" onClick={handleClickOpen}>
                 Add Customer
             </Button>
             <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
@@ -97,10 +97,10 @@ export default function Addcustomer(props) {
                     />
                 </DialogContent>
                 <DialogActions>
-                <Button onClick={addCustomer} color="primary">
+                <Button onClick={addCustomer} color="inherit">
                         Save
                     </Button>
-                    <Button onClick={handleClose} color="primary">
+                    <Button onClick={handleClose} color="inherit">
                         Cancel
                     </Button>
                 </DialogActions>

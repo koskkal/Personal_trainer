@@ -32,7 +32,7 @@ export default function Addtraining(props) {
 
     return(
         <div>
-            <Button style={{margin: 10}} variant="outlined" color="primary" onClick={handleClickOpen}>
+            <Button style={{margin: 10}} variant="outlined" color="inherit" onClick={handleClickOpen}>
                 Add Training
             </Button>
             <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
@@ -66,10 +66,10 @@ export default function Addtraining(props) {
                     />
                 </DialogContent>
                 <DialogActions>
-                <Button onClick={addTraining} color="primary">
+                <Button onClick={addTraining} color="inherit">
                         Save
                     </Button>
-                    <Button onClick={handleClose} color="primary">
+                    <Button onClick={handleClose} color="inherit">
                         Cancel
                     </Button>
                 </DialogActions>
